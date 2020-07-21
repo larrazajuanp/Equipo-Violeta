@@ -1,0 +1,13 @@
+/*nav style*/
+
+/*footer style*/
+footer, .social-media, .copyright{
+    display: flex;
+}
+
+footer{
+    flex-direction: column;
+}
+.social-media, .copyright{
+    justify-content: space-around;
+}
