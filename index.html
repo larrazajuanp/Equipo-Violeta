@@ -7,20 +7,239 @@
     <!--stylesheet de bootstrap - CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/9f2580040b.js" crossorigin="anonymous"></script>
+
     <title>Landing Page: Apple</title>
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--scripts de bootstrap - CDN-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    <!--<nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#" aria-label="Product">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false">
+          <title>Product</title>
+          <circle cx="12" cy="12" r="10" />
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </svg>
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Producto</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Caracteristicas</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Soporte</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Pricio</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Carrito</a>
+        </div>
+    </nav>-->
+    <!---------INICIO NAV BAR---------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white" href="#">Apple</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-danger mr-4" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger mr-4" href="#">Producto</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-danger mr-4" href="#">Precios<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!------FIN NAVBAR------->
+
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal">IPHONE 11</h1>
+            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
+        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Another headline</h2>
+                <p class="lead">And an even wittier subheading.</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+            </div>
+        </div>
+    </div>
+
+    <!--card christian-->
+    <div class="card" style="width: 18rem;">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhMQEBITFRUVFhYWFRgXFhUbFxUXFhUWFhUYGBkYHSggGBslHRkXIzEhJikuLi4uGiAzODMsNyguLisBCgoKDg0OGxAQGi0fHR0tLS0rLS0tLS0tLSstLSstLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQIDBAYHAQj/xABLEAABAwICBAgHDQcEAgMAAAABAAIRAyEEMQUSQVEGByIzYXGRsRMyc4GhwfAUIzRCUlRyg5Kys7TRFRZTk9Ph8RckYpSC0mOiw//EABgBAQEBAQEAAAAAAAAAAAAAAAACAwEE/8QAHREBAQADAQEAAwAAAAAAAAAAAAECESEDMRJBYf/aAAwDAQACEQMRAD8A7iiIgIiICIiAis4rFU6bdeo9rG73EAXyElYjdM0jkKx2SKFePtakR05IJFFgO0tTBI1a1rWoVyPMQyCOleften8mv/16/wD6IJBFH/tin8mv/wBev/6LEHCvByRrvsYJ8DW1QdoLtTVB6CZQTaKF/erA/OKfan71YH5xT7UE0ihf3rwPzin2p+9eB+cU+1BNIoX968D84p9qfvXgfnFPtQTSKF/erA/OKfan714H5xT7UE0iiP3lwcwK7HH/AIy7s1QZUhhsXTqTqODozANx1jMedBfREQEREBERAREQEREBERAVrF4htNj6jzDWNLnHcGgk+gK6o7T8+BgCZqUGn6Lq9Nr/ADapKCHwGBLj7uxkmqQSxhd73hmfJGQJ3vOZnIQBGUuMHRzq3gPdDATkS06p6i4iR/yyVHGtiKjNHvFP4xY09IAnVPQXaojbK+csJUA991jrtdrjO7gdaSeuO0rmOP5Fun17SpFwDmvYQRIIbIINwQZuqakNMOez7Bt1mbLTOKLSpq4Z+eoHnU6AW03kDzuJ63FbjXYCXQRyrbdnfkprsaBxp8IqlJjqFM+DDWl1ZzYktgQxs9bZ8pTGTnLjxpYt7w/EPeyWy1sazmjY3l+LbZ09m/8AGQxpqFrhIdiKLT0tNUUz2igzsU9SxVF006jWlrnRIzHxpvnLgOxbeeO2eeWnKqeHqEH36trRIGqyCAJzjOyjNKVsXRa13hKkHOQ2x8w6l1bBaJo4d5ycCSBnMGYJ2CJuCIkLJ0hoOhVYGNmS464eAW6pAiGzkCDaNqu4TTOZ1w39vYr+K7sb+iqbp3FHOsR5h+i33SfF/L3MpUHSOVyJLdWYk/JnpiFrekeCz6WvrUjAtIORUXCtJ6REftvE/wAc9g/ReHTeKgHw5mcoEj0KOqMgkKhQtI/t7FfxXdjf0Xn7cxP8U9jf0UciCQdpnEGxqE9Yb+i2TgNwqxVKuxrKrwb6gzaTElmoTEO3CJMdY0tZmhnluIoOGyrTP/3CD7J0LpAYihTrCBrtBIBkA5GDtE5HaIO1Zy1ri/bGEA2Bxa3oaxrWCPsrZUBERAREQEREBERAREQFHafPvTfLYYduJpAqRUbwg5pvl8L+ZpIMDhDhWVaZpVBLXCD9kXHSuTY7ikY6oXNqANJnJw7QDB80Lo/D/S/uTCvrjxhAb0EtF+mBJjbC+dcTpzG1nGuaj5kmZmIvmb29oXMZb8LXesG1mjcA5lET4Np2RMB1Q5ZTyhOd1ymvi313GtVqa797iJteGjYBsaLBblxa6cfj6D6OIMubA1s9tiZzgxnnMGVg43irxIqHwFTVpk2GqHho3NcXtMdDhbec13GyXrl3+kHpeu5+FoPe5zj4WjJcSSYxeIFybmwWdhcQ5rtU6xAnPdJvbfCo4UaM8FSpYZpu2rh2TM8o4mvJP/kStifwQDKZ1KpfVcbxAa0Cbuccge/etvKsvWbYT8TN5Djn2rNwmPdBMzkOz2Ki9M6OfhnmmxriBB1oMX1gRbI8l1txbmmhaTqr9VjXdOwCM3H0Learz922/AaXZqik9jIBNyTGwjLbdX9J6KwuKYWtHg3Fp1RGsHGLavT0ZX3qC0lhdQNhwdN5FrwVbwuLqCAQY2frKm47+K/LXK1nGcWjiHOqEUxqjVcGiS51hIkdMjO2zbzTGaNqMuWmJIneRnG+OhfQzMY14Lalw6MpPi7RPt67p0LhXS9zAX1GuDnObNoizcjMGfpWWeWDXHN8zFq8XTeMjgdSosZXw1ItvqVWt1i1pA1g6DOqCOmLLmbgsbNNpdvFlaK56l5Rn3gsVZWiuepeUZ94Ljr614An/a/WP7wtkWt8Afgv1j/UtkQEREBERAREQEREBERAUbp/mm+Xwv5mkpJRvCDmm+Xwv5mkgheGuhfdeGfRtLg0tnLWAyO4EEhfPGO4G6RpPNEUnkSQLO9Qg+ZfUr/UO5WxRb1edTMrCxzLi34LvwNEmrzlQgkfJA39P6BdBc2o803NfAE6wgHW6J2LOFIbz2lKjLHPtKbHF+MR8P1t2IonLdiayxaOlXeEfyjq3MSdkAK/xjskuaNtekB/2a6xdJ6Gq0WNqu1BJ1TBnVJNgf182a9Hl8Y+qVwWknyL3eQSJyyMjcbqcwjJLn0yOXD3kRrRHLtbrt0LQaWIAdnYat+qP0CmKGkSIc1xnXMTuJkSdpuRu7Vtti3rSOjGPDb2AkEHlTFy7ezKwPn36zg9F13VXMANpIJMN1ZkF1jE2O/tWVoPTQ1W0XATLTJzb0Ts2KRw+lCW6gzIIBjzdw9Kdjt1UHiJpVNVxBAnz7ojojtWfh9Imb3gRnlPKj23KvG4UPdryGw6dYAyQAAQ0bx61Xh9Fs1HPYSD/wAiT5jAGcZ+wrcs65q/pVpVnuugabpveBssY2dJ2FfPmmNHvo1HMc0iCc13uhWeHBrTtmTs2xboXMeMejVNeHuJga0TIE5lt8lh6YtfPJoSytFc9R8oz7wWO9sFZOiuepeUZ94LBu+tOAPwX6x/qWyLWeL93+2cN1Ry2ZAREQEREBERAREQEREBRvCDmm+Xwv5qipJRnCHmm+Xwv5qiguu9Q7l4jz3DuXkqHVQK8qZFFS82QcW4yyWlxGYr0SI3+6KxhUYLECs3wVYv1CHHkwXazSHN1ZtsIz2pxmE8szHv1O+7/c11qeD0g7wuvsb4o3CzWjpK9HleMfSM7EsgmAQ3WMTsANmnZIBE7FRWqGlUioHNOqDBG8Q093apAY1lRzajmAmnIIddmsLNGrkYiwyABnYr+lsA3EvZiXuAswuJzcAS14mLQAD1laaZLWCxR1w49BnLLuupzCYkEBwmwmOl39gsL9n4awa4tGqMiSTJME6xIG9U4qqyjUDWEkaoLpEQbyBvGX2lW06TxxxBDTB2+fPzKZ0ViJGo4SHdozgrTsLy3awNs+pTWFxABBzuPRYetVp2VmaUrtYQ05REHPoJ6f1Wt4vRPh6BgiWlzmax2Ryhff3qU4WNkteIlwEyb5C8TbasHR2LB97mJtG/M+odKmm+uWYzRUAkmHTcHYsDA0tWtR8oz7wW6cKMEGuJiCTfI22R6FqwbFellzjMvpBYZ46bYZbfUHF98Hd5Ry2havxfD/bu8o5bQs2oiIgIiICIiAiIgIiICjeEHNN8vhfzNJSSjdP803y+F/M0kHrz3DuXgSpn5h3LwFZuqwV5UyK8R5sg4pxnM8cGBNal5gcRXPrWuaR0I6g1r3uBa97mtgRPJDpN5BIkDdGexbRxmuAcSZAFbDzGfP1clq9bT5ZUqUn++N1uQXgGzmyZkbWnLvC9HnrTHP6eDcGta1p5Vg0ZlxAkxnlHpV6u95bTYWvzhtiA6zSYJzAtMbd22RpafDWhxPLNoLRN5mMhFycrGcybZ+I0m2thnMcwOfrS0nlaoB5RJJMDxZ2GAIO3VkhMDLZILYGrq5zcOLndVjfq3qOxOkw98/Fkn02upWvV1WMBzPjkggRYuAIG/Zn4ohWanBs0wKtN4eS4NDdzok3OxoETtOW1OjJ0biixtr3i/X/lbBozGgulwsDfsiy06t4SiRTeBlrQIPpyOWfpWdg8RF98dXtK0xqLxtuJw/h9asHTyifotOQj9FRiNFDU8LTOtAGWfSen+6uaExmq5rLQ8XG/5OXasQ6QJLoaQNYxuAkx/ZXrfHP6g+E0up0yRlNz1rQ9YGtSI/is+8F0LTomlJuJg75It5lzwUor0/Ksn7Yheb1mm3llt9RcAB/tT5R/qWyrW+AHwX6x/qWyLB6BERAREQEREBERAREQFG6f5pvl8L+ZpKSUbp/mm+Xwv5mkgpqm/mHcvAUrG/mHcqQVm6rlHmyplH5IOL8bB5NT6dH8Wsud1C14NQFxdIhobbK5MbbBdB43Obq/Spfi1lzTRONNF2s0wem47FtgzyZdR9RhiqC12YBsRPRmOorbeCHCJ1HUBdq3mQLx15ytIbidd5qPcSSZvu9eULYND12VQadWGiOS4NGsy/TmDtC0xrPKJjhLj21KjcRrlz3klzNUNhoHJl18jrGZ2m2RVnRelXwTYh8NIM5ibNGzPPoCxg2g9zjUeQ0SBqGzgLTDgDBiVlYbQbGuNRuIadUSwlrgANs+aZvvV9SzOEJpanhgNXk6jALcppEkiw2kT6FhYChUADnsIabC2fn2Epi8ewaha4uJmGkCb3JztM59HQUoY4hlSnr+MLETe/JLt42Lu+uJfAYsB+s7ZAtumDHRks6vhS337XYWucQIMRacoyjcta8NqwR4xz6wNv8AdS+i8WTTqUpBsHATcQb9UyFcyTpY0u8EHUkti/QSdk7JWjVR79SOXvrPvBbjpd7QKjASCRYAWB1ZAv3rS2H32l5Wnbb44UevxXlNV9Q8APgv1j/UtkWtcAPgv1j/AFLZV5XqEREBERAREQEREBERAUbp/mm+Xwv5mkpJRun+ab5fC/maSC3Wz8w7lQCva2fmHcqQs3VYXjzZeSjzZBxfjb5ur9Kl+LWXJSus8bfN1fpUvxay5PZa4/E1VTCkaFW2qwkE7bXtMXsFHU42rMwdYNdfb0xfrVxFVVKr4AkQMv06FOaIq1XgtLp5JDQSZJO3abdChq+EjVhzXAiWySCNwI/z+lzR9XVfBB3ZkEdRGXWuxNnEgyqxt45UnWmJzIi5tutHnN1n4d7Bqub47xJBNs4Eg7LSoTHNYHSzW1I+Mdu0NtcZZ9OxX9HYu4cYzgHcBvPn7AuyuWJN+tTcWuMkeNeRO6RmpTQNUHWIFy0gXznz9E3VNXCsezkNhxO8ZXnbdY+jXGm54INmkXHnFvaVc4h7pPENOs4AyY3QLAHLqWsufNWmdUc7TuLfGE2UjjJbcOM2gkxBicxtUNQefCU/Ks++FOd4vCdfUfAD4L9Y/wBS2Va1wA+C/WP9S2VYNxERAREQEREBERAREQFG6f5pvl8L+ZpKSUbp/mm+Xwv5mkgsV8/MO5UBVV8+zuVErN1UCj8l4vHGyDjPG3zdX6VL8WuuRtK65xt81V+lS/FrrkC1ji81X9bKNixmOV0OVIrOceRMHWkcqJtB5PQr1OuGw60bNl47srK1gaxEybbR6VQ+qBZsgbj7eldSy8Q17zIBMjZfPMdqsgOBAII6PX0q9hcScvT0b7K/i8cXBrQTAudsnIdnrXRm6OcQLGIFyTJn9VfGkH65qExsAtO4dft5sLCwWwCJ2yM43K4wthwfltuRvFiPUu7TpHaQ0gHSRGdrenvUfgqk1qXlGffC9xFMaxaCc7SQALXBPr6Fa0cPfqXlGfeCztayPrHgB8F+sf6lsi1vgB8F+sf6lsilQiIgIiICIiAiIgIiICjdP803y+F/M0lJKN0/zTfL4X8zSQY2Iz7O5W1XiPG7O5WwVm6qlH5LxeONkHG+Nrmqv0qX4tdchhde42uaq/Spfi11yIFa4uPWhZIaLXVlsK610AqomskGAR2blQIJsIG6VXhgNq8pi9vMupZFchoi0W6+nuXlJw2bT7d/oXlQSCRmO1V4e2w7Oz/MdiOpLDgEEReNixq9XVaAM9u3pV2kbZxdUYnDOguJtmIMgzsF+r+6ORHVCMzN5BjeQdUyQbTn0bRmMfRw9+peUZ94KvFSDA3T2rzAH36leffGfeCirj6v4AfBfrH+pbItb4AfBfrH+pbIuOiIiAiIgIiICIiAiIgKN0/zTfL4X8zSUko3T/NN8vhfzNJBiYnxvMO5W1cxPjeYdytKHVS8fkvEdkg47xtc1V+lS/FrrkIXXuNnmqvXS/FrrkTVpi4qBVbCrav0Gjv/AM9/YqSyGsyPm2XV1jbZ2y6b+3cqg2YGXareruP+F1xUxxmLZqQayA3cf0v39xWJh6FphSGFogjLlTbdABJ2XM7ZtGV7BVSpkguAFjEDoEm25ZeKqMIgtAtILbATnbdFp7FW9ga2Dl3dW0f4UHpXGlxAa0ZdOe9dvEzqLxL5JjeeyU0Xz1LyjPvBWHGFe0WffqPlGfeCzrV9acAPgv1j+8LZFrfAD4L9Y/vC2RcBERAREQEREBERAREQFG6f5pvl8L+ZpKSUbp/mm+Xwv5mkgxMR43mHcrSuYjPs7lbUOi8fkvV4/JBx7jZ5qr9Kl+LXXIguucbPNVfpUvxa65I0K44qaFmYSnJk7O72lY1FkkBSLHANjv2QriXtR+xot7H0K4WObmWnW3bDY55bV4yiQNbe6BncHWByyGVplZDKD3WALjefGtkZ6Tcdq64uUWWJ3Nm3WBHpVdJhI1m9MA53zI7I7OhXMG4NAtrTGYyiZA6bgz2r3G4mASJiZg5zGf8Af/JOKcTi5Zqui3TEwNm4/wBlreKq37svYq/pDGl+eUAbeom5OcTuvaBZRxKm1Uj3MrK0Zz9LyjPvBYiytFc9S8oz7wUqfWfAD4L9Y/1LZVrXAD4L9Y/1LZUBERAREQEREBERAREQFHafJFIEfxaE/R90U9b0TdSKx9I4UVaT6RJAe0tkZtkQHDpBuOpBE18+zuVtYmA0j4SaVWGYinarTnseyfGYcwd3TIGWodF4/JeoUHHuNjmq3Q6mOyo93dUb2rkQC7lxn6MJa5xaTTqNLSQCdV51IJAznwdKLfEcM3gLjFDDEOh0iDmAXC3S1Xi5XuHp7fbasynQc8xEDad3tC8pMaB8cb+Q/fsgLMoVWA/HtMS2peTs5MR7dCtK9RwRA5RuGzcCIECO7rVdfExYGDYkgky4EnWParFfGhxLtV1ycmPAg7gBAHV2LAxBcTMPJIEy1wvt2e2e2B3bmme7FCLgTcze/X7DMqNxmO1pAPtdY1ZlQ/Ff2O/RWjh6nyH/AGSptdkWnulUK97mqfIf9kp7mqfId9kqVLKzNEtmvRG+oz74Vj3NU+Q77JU3wP0dUfiaZa0lzXDUaGkkvPiWGwG984jag+nuL904X/zdHU4NeOvxlsqi+DOjPc2GpUTm1oBgzFgA2fjaoAbO2JUogIiICIiAiIgIiICIiAiIgwdI6IoVy11RnLZ4jwS17epwvHRkdoWCNA1Bliqh+lSw5joltMKcRBC/sWr84P8AKpfon7FqfOD/ACqX6KaRc0IDEcHDUBa+vIIIINGjBBzB5KhK/FlhXOLnVHOJEcqnSt1Pa1tWOjXgbAFvSLo0UcWODiL5/LxP9det4s8Jvd/MxX9dbyiDSf8ATXB73/zcT/WVTeLbB7TU81bEj/8AZboiDTTxb4H/AOb+fiP6it/6bYTfU/m4n+st2RBpP+muD3v/AJuJ/rLz/TPBf8/5uJ/rLd0QaOOLDA7db7dU+ipUcO0LYdC8G8JhQPA0mtIETqtGecBoDWk7YAnapdEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERB//9k="
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Iphone 11</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+    <!--fin card christian-->
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                    viewBox="0 0 24 24" focusable="false">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+                </svg>
+                <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Team feature</a></li>
+                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                    <li><a class="text-muted" href="#">Another one</a></li>
+                    <li><a class="text-muted" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Another resource</a></li>
+                    <li><a class="text-muted" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Business</a></li>
+                    <li><a class="text-muted" href="#">Education</a></li>
+                    <li><a class="text-muted" href="#">Government</a></li>
+                    <li><a class="text-muted" href="#">Gaming</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="form">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Humboldt 2520">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Estado</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Elegir...</option>
+                            <option>CABA</option>
+                            <option>Buenos Aires</option>
+                            <option>La Pampa</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Codigo Postal</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </form>
+        </div>
+
+        <!--footer christian-->
+        <footer class="footer mt-auto py-3">
+            <div class="social-media">
+                <a href="https://twitter.com"><i class="fab fa-twitter mr-4"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook mr-4"></i></a>
+                <a href="https://telegram.com"><i class="fab fa-telegram mr-4"></i></a>
+            </div>
+
+        </footer>
+        <!--fin footer christian-->
+
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+<!--scripts de bootstrap - CDN-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
